@@ -1,0 +1,21 @@
+{
+    "name": "marsli/simple-api",
+    "description": "The Api frame for PHP(LAMP).",
+    "type": "project",
+    "authors": [
+        {
+            "name": "marsli",
+            "email": "304665450@qq.com"
+        }
+    ],
+    "require": {
+        "php" : ">=7.1",
+        "monolog/monolog": "^1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "simple\\": "simple/",
+            "app\\": "app/"
+        }
+    }
+}
