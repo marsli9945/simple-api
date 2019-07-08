@@ -83,6 +83,6 @@ class Controller
             }
         }
 
-        require APP_PATH . '/' . $group . '/view/' . $controller . '/' . $action . '.html';
+        require APP_PATH . '/http/' . $group . '/view/' . $controller . '/' . $action . '.html';
     }
 }

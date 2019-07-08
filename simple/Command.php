@@ -88,7 +88,7 @@ class Command
             $controller_content = <<<eof
 <?php
 
-namespace app\\$argv[2]\controller;
+namespace app\http\\$argv[2]\controller;
 
 
 use simpleBoot\controller\QueryController;
@@ -115,7 +115,7 @@ eof;
             $controller_content = <<<eof
 <?php
 
-namespace app\\$argv[2]\controller;
+namespace app\http\\$argv[2]\controller;
 
 
 use simpleBoot\controller\ModelController;
@@ -139,7 +139,7 @@ eof;
             $model_content = <<<eof
 <?php
 
-namespace app\\$argv[2]\model;
+namespace app\http\\$argv[2]\model;
 
 
 use simpleBoot\db\Model;
