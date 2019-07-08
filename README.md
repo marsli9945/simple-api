@@ -9,7 +9,7 @@ The api frame for PHP.
 所以可以很方便的用composer扩展已有类库
 
 #### 安装教程
-1. git地址:https://gitee.com/marslilei/simpleApi.git
+1. git地址:https://github.com/marsli9945/simple-api.git
 2. composer create-project marsli/simple-api **Path** -sdev --no-progress --no-interaction --ansi
 2. 通过phpstrom新建
 ![blockchain](http://pmahf7gv8.bkt.clouddn.com/create.png "区块链")
