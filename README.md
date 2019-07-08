@@ -3,7 +3,6 @@
 #### 介绍
 The api frame for PHP.
 用于提供接口的PHP框架，由于需求问题为多库前提下项目提供API接口框架。
-简约而不简单。
 
 #### 软件架构
 自动加载依赖于composer提供的自动加载类，
@@ -103,7 +102,7 @@ server {
         └── webStart.php --- 浏览器直接访问.phar的入口，仅做显示，无实际逻辑
 ```
 ### 快速入门
-####配置   
+#### 配置   
 1. 与市面其他框架不同，我们不使用.php而使用.ini文件作为配置文件。    
 2. .ini是一种序列化文本文件，作为php的官方配置文件，php本身对其就有专属的解析方法，可以很方便解析为常用的数组形式。   
 3. 搭配虚拟控制器功能，可以让不懂PHP的前端同学也能快速上手，实现数据库的API驱动功能。
@@ -138,7 +137,7 @@ charset      = utf8 --- 指定编码集
 prefix       = ims_ --- 表名前缀
 ```
 
-####生成控制器和模型类   
+#### 生成控制器和模型类   
 在框架根目录下执行   
 ```
 php artisan.php <group> <controller> --no_model
@@ -173,7 +172,7 @@ class Test extends QueryController
 {
 }
 ```
-####路由和访问规则
+#### 路由和访问规则
 ```
 http://simple.api.com/<group>/<controller>/<action>
 ```
@@ -191,7 +190,7 @@ http://simple.api.com/<group>/<controller>/<action>
 ```
 ps: GET请求下action写数字表示请求的是getInfo，表示获取指定ID的数据
 
-####助手函数
+#### 助手函数
 1. config() 获取配置信息
 2. model() 获取模型类实例
 3. query() 获取虚拟模型实例
@@ -200,8 +199,8 @@ ps: GET请求下action写数字表示请求的是getInfo，表示获取指定ID�
 6. success() 成功数据返回方法
 7. error() 错误信息返回方法
 
-###线上部署
-####代码打包
+### 线上部署
+#### 代码打包
 ```
 php artisan.php build <phar_name>
 
